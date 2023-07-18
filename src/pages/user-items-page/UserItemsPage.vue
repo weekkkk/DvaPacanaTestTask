@@ -4,13 +4,12 @@ import { UserItems, UserSelectedItems } from '@/widgets'
 </script>
 
 <template>
-  <!-- <h1>UserItemsPage</h1> -->
   <PanelLayout>
     <template #top>
       <UserSelectedItems />
     </template>
     <template #bottom>
-      <Suspense>
+      <Suspense :timeout="0">
         <UserItems />
         <template #fallback> Loading... </template>
       </Suspense>
