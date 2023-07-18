@@ -1,7 +1,20 @@
-<script lang="ts" setup></script>
+<script lang="ts" setup>
+import { PanelLayout } from '@/shared'
+import { ItemsForChoose, SelectedItemSorChoose } from '@/widgets'
+</script>
 
 <template>
-  <h1>ItemsForChoosePage</h1>
+  <PanelLayout>
+    <template #top>
+      <SelectedItemSorChoose />
+    </template>
+    <template #bottom>
+      <Suspense :timeout="0">
+        <ItemsForChoose />
+        <template #fallback> Loading... </template>
+      </Suspense>
+    </template>
+  </PanelLayout>
 </template>
 
 <style lang="scss"></style>

@@ -21,7 +21,7 @@ export const useUserItemStore = defineStore('user-item', () => {
    */
   const getItems = async () => {
     try {
-      items.value = (await (await fetch('./userItems.json')).json()) as ItemType[]
+      items.value = (await (await fetch('/userItems.json')).json()) as ItemType[]
     } catch (e) {
       console.log(e)
     }
