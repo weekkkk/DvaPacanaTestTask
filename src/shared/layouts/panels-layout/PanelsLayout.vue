@@ -17,5 +17,9 @@
   grid-auto-flow: column;
   grid-template-columns: 1fr 1fr;
   min-height: 100vh;
+  &-panel {
+    display: flex;
+    flex-direction: column;
+  }
 }
 </style>

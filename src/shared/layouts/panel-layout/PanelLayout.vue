@@ -13,6 +13,7 @@
 
 <style lang="scss" scoped>
 .panel_layout {
+  flex-grow: 1;
   &-section {
     &-bottom {
       flex-grow: 1;
