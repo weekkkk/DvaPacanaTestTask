@@ -1,0 +1,65 @@
+@import './global/index';
+
+:root {
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 14px;
+  }
+
+  body {
+    font-family: 'Montserrat';
+    line-height: var(--n-lh-regular);
+    color: var(--n-base);
+    background-color: var(--n-second-0);
+  }
+}
+
+:root {
+  a,
+  .action_link {
+    cursor: pointer;
+    color: var(--n-brand);
+    text-decoration: underline;
+  }
+}
+
+:root {
+  .form_footer {
+    display: flex;
+    gap: 16px;
+    > * {
+      flex-grow: 1;
+    }
+    @media (max-width: 768px) {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+:root {
+  --seshka-px: 24px;
+  --seshka-py: 24px;
+  @media (max-width: 768px) {
+    --seshka-px: 16px;
+    --seshka-py: 16px;
+  }
+
+  #app {
+    display: grid;
+    min-height: 100vh;
+    grid-auto-rows: max-content;
+    header {
+      grid-row-start: 1;
+      grid-row-end: 2;
+    }
+    > .default_layout {
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+  }
+}
