@@ -9,5 +9,9 @@ if (!userItemStore.items?.length) {
 </script>
 
 <template>
-  <ItemList v-if="userItemStore.items?.length" :items="userItemStore.items" />
+  <ItemList
+    v-if="userItemStore.items?.length"
+    :items="userItemStore.items"
+    @item-click="userItemStore.chooseItem"
+  />
 </template>
