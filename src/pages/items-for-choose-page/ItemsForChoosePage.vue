@@ -1,5 +1,7 @@
 <script lang="ts" setup></script>
 
-<template></template>
+<template>
+  <h1>ItemsForChoosePage</h1>
+</template>
 
 <style lang="scss"></style>

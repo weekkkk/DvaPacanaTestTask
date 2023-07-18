@@ -12,6 +12,7 @@ const router = createRouter({
       children: [
         {
           path: '',
+          name: 'items',
           components: {
             left: pages.UserItemsPage,
             right: pages.ItemsForChoosePage
